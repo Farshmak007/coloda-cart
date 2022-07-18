@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* transform-origin: center; */
+    perspective: 1000px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 250px;
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    transform-style: preserve-3d;
+    margin-top: 100px;
+}
+
+
+.kartochka {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    /* border: 2px solid blue; */
+    transition: all 3s ease-in-out;
+   box-shadow: 2px 2px 2px 2px black;
+}
+
+
+.one {
+    transform: rotateY(60deg);
+    background: url(img/Rossia.png);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    left: 50px;
+}
+
+.one:hover {
+    animation: transform 10s infinite linear;
+   
+}
+
+h2 {
+    position: absolute;
+    top: -10px;
+    left: 70px;
+}
+
+.two {
+    transform: rotateY(60deg);
+    background: url(img/Japan.jpg);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    left: 150px;
+    z-index: -1;
+}
+
+.two:hover {
+    animation: transform-2 10s infinite linear;
+}
+
+@keyframes transform-2 {
+    20% {
+        transform: translateY(270px) rotateY(60deg);
+    }
+    40% {
+        transform: translateY(270px) translateX(120px) rotateY(0deg);
+    }
+
+    60% {
+        transform: translateY(270px) translateX(0px) rotateY(60deg);
+    }
+}
+
+.three {
+    transform: rotateY(60deg);
+    background: url(img/Dania.jpg);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    left: 250px;
+    z-index: -1;
+
+}
+
+.three:hover {
+    animation: transform-3 10s infinite linear;
+}
+
+@keyframes transform-3 {
+    20% {
+        transform: translateY(270px) rotateY(60deg);
+    }
+    40% {
+        transform: translateY(270px) translateX(0px) rotateY(0deg);
+    }
+
+    60% {
+        transform: translateY(270px) translateX(0px) rotateY(60deg);
+    }
+}
+
+.four {
+    transform: rotateY(60deg);
+    background: url(img/Бразилия.png);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    left: 350px;
+}
+
+.four:hover {
+    animation: transform-4 10s infinite linear;
+}
+
+@keyframes transform-4 {
+    20% {
+        transform: translateY(270px) rotateY(60deg);
+    }
+    40% {
+        transform: translateY(270px) translateX(-40px) rotateY(0deg);
+    }
+
+    60% {
+        transform: translateY(270px) translateX(0px) rotateY(60deg);
+    }   
+}
+
+.five {
+    transform: rotateY(60deg);
+    background: url(img/Грузи.jpg);
+    background-size: 200px 250px;
+    background-repeat: no-repeat;
+    left: 450px;
+}
+
+.five:hover {
+    animation: transform-5 10s infinite linear;
+}
+
+@keyframes transform-5 {
+    20% {
+        transform: translateY(270px) rotateY(60deg);
+    }
+    40% {
+        transform: translateY(270px) translateX(-160px) rotateY(0deg);
+    }
+
+    60% {
+        transform: translateY(270px) translateX(0px) rotateY(60deg);
+    }
+}
+
+
+
+
+@keyframes transform{
+    20% {
+        transform: translateY(270px) rotateY(60deg);
+    }
+    40% {
+        transform: translateY(270px) translateX(200px) rotateY(0deg);
+    }
+
+    60% {
+        transform: translateY(270px) translateX(0px) rotateY(60deg);
+    }
+}
